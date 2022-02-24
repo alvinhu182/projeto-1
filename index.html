@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
 
-	<body style="background-image: url(background.png)">
+
 		<header>
 			<div class="container">
 				<h1 class="logo" class="header"><img src="logo.png"></h1>
@@ -21,12 +21,16 @@
 					<ul>
 						<li><a href="produtos.html">Produtos</a></li>
 						<li><a href="feedback.html">Feedback</a></li>
-						<li><a href="sacola.html">  <button class="btn-cart"> <span class="btn-cart-badge">2 </span>
-							<i class="fa-solid fa-bag-shopping"> </i></button> </i></a></li>
+						<li> <button id="btn-cart">
+							<i class="fa-solid fa-bag-shopping"></i>
+							<span class="btn-cart-badge">2</span>
+						  </button>
+						</li>
 					</ul>
 				</nav>
 			</div>
 		</header>
+		<body style="background-image: url(background.png)">
 			<main>
 				<section class="principal">
 					<h2 class="titulo-principal">Docinhus da Ray</h2>
@@ -35,10 +39,25 @@
 					<p> Whatsapp: (67) 99128-3355</p>
 					<p>Facebook: Docinhus da Ray</p>
 					<p>Que a vida seja doce com cobertura e muito recheio.</p>
+					<p> WhatsApp: <a href="https://api.whatsapp.com/send/?phone=5535988351193&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido" target="_blank">
+						<i class="fa-brands fa-whatsapp-square"></i>
+						(35) 98835-1193
+					  </a></p>
+					
 				</section>
-
+			</main>
+			<aside class="cart-sidebar">
+				<button id="btn-close-cart">
+				  <i class="fa-solid fa-xmark"></i>
+				</button>
+				<div id="empty-cart">
+				  <i class="fa-solid fa-bag-shopping"></i>
+				  <p class="h2">Sua sacola está vazia.</p>
+				</div>
+			  </aside>
+			<script src="scripts.js"></script>
+			
+	</body>
 </head>
-<body>
-    
-</body>
+
 </html>

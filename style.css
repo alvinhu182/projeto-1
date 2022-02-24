@@ -12,6 +12,7 @@ nav {
 	position: absolute;
 	top: 110px;
 	right: 0;
+	left: 40%;
 }
 
 nav li {
@@ -67,7 +68,7 @@ nav a:hover {
 	font-size: 34px;
 }
 
-.produtos h2 {
+.produtos h2, .h2 {
 	font-size: 30px;
 	font-weight: bold;
 }
@@ -77,11 +78,12 @@ nav a:hover {
 	font-weight: 600;
   }
 
-footer {
-	text-align: center;
-	background: url("bg.jpg");
-	padding: 40px 0;
-}
+/* footer {
+	position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: 40px 450px;
+} */
 
 
 
@@ -109,7 +111,7 @@ form label, form legend {
 	margin: 3% 10% 1%;
 	padding: 2% 2%;
 	width:20%;
-	background-color: hotpink;
+	background-color: pink;
 	color: white;
 	font-weight: bold;
 	font-size: 18px;
@@ -120,7 +122,7 @@ form label, form legend {
 }
 
 .enviar:hover {
-	background-color: darkorchid;
+	background-color:  pink; 
 	transform: scale(1.2);
 }
 
@@ -144,7 +146,7 @@ td, th {
     margin: 3% 38% 1%;
     padding: 2% 2%;
     width: 20%;
-    background-color: hotpink;
+    background-color: lightpink;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -192,9 +194,15 @@ td, th {
 	margin: 0 0 1em;
 }
 
+.btn-sacola {
+	background: lightpink;
+	font-size: 30px;  
+	position: relative;
+	cursor:pointer;
+	border-radius: 30px;
+}
 
-
-.btn-cart {
+#btn-cart {
 	width: 60px;
 	height:60px;
 	background: whitesmoke;
@@ -214,7 +222,7 @@ td, th {
 	display:flex;
 	justify-content: center;
 	align-items:center;
-	background: pink;
+	background: #faf5f5;
 }
 	
 	
@@ -227,17 +235,7 @@ td, th {
 }
 
 
-.itens {
-	line-height: 1.5;
-}
 
-.itens:first-child {
-	font-weight: bold;
-}
-
-.itens:before {
-	content: "🟊";
-}
 
 /* css da página Recheios disponiveis */
 .estilorecheios{
@@ -280,3 +278,46 @@ padding-left: 5%;
 	  width: 1320px;
 	}
   }
+
+  /* cart side bar */
+
+  .cart-sidebar {
+    position: fixed;
+    background-color: #FFF;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .cart-sidebar-open {
+    display: flex;
+  }
+  #btn-close-cart {
+    font-size: 30px;
+	color: red;
+    background: transparent;
+    align-self: flex-end;
+  }
+  #empty-cart {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #empty-cart .fa-bag-shopping {
+
+    font-size: 154px;
+    opacity: 0.2;
+    margin-bottom: 25px;
+  }
+  @media (min-width: 768px) {
+    .cart-sidebar {
+      width: 428px;
+      box-shadow: -3px 0px 6px rgba(0, 0, 0, 0.25);
+    }
+  }
+
