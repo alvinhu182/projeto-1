@@ -16,16 +16,23 @@
 					<ul>
 						<li><a href="index.html">Inicio</a></li>
 						<li><a href="feedback.html">Feedback</a></li>
+						 <li> <button id="btn-cart">
+							<i class="fa-solid fa-bag-shopping"></i>
+							<span class="btn-cart-badge"></span>
+						  </button> 
 						
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<body style="background-image: url(background.png)">
-		<main>
+		<main class ="container">
+			<div id="groups-root">
+				<i class="fa-solid fa-spinner products-loading"></i>
+			</div>
 
-			
-			<ul class="produtos" class="container">
+
+			 <!-- <ul class="produtos" class="container">
 				<li>
 					<h2>Bolo</h2>
 					<img src="bolo.png">
@@ -47,14 +54,24 @@
 					<p class="price">R$ 35,00/kg</p>
 					<p class="btn-sacola">Adicionar</p>
 				</li>
-			</ul>
+			</ul> -->
 		<div>
 			<spam class="recheio" >
 				<a href ="recheiosdisponveis.html">Recheios Disponiveis </a>
 			</spam>
 		</div>
 		</main>
+		 <aside class="cart-sidebar">
+			<button id="btn-close-cart">
+			  <i class="fa-solid fa-xmark"></i>
+			</button>
+			<div id="empty-cart">
+			  <i class="fa-solid fa-bag-shopping"></i>
+			  <p class="h2">Sua sacola está vazia.</p>
+			</div>
+		  </aside> 
+		<script src="scripts.js"></script>
 
-		
+
 	</body>
 </html>

@@ -39,9 +39,11 @@ nav a:hover {
 	display: block;
   }
 .produtos {
-	width: 940px;
-	margin: 0 auto;
-	padding: 50px 0;
+	border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .produtos li {
@@ -78,12 +80,13 @@ nav a:hover {
 	font-weight: 600;
   }
 
-/* footer {
+ footer {
 	position: fixed;
     bottom: 0;
-    text-align: center;
-    padding: 40px 450px;
-} */
+	width: 100%;
+    padding: 40px 0;
+	background-color: #088C19;
+} 
 
 
 
@@ -320,4 +323,5 @@ padding-left: 5%;
       box-shadow: -3px 0px 6px rgba(0, 0, 0, 0.25);
     }
   }
+
 

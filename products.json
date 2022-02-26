@@ -1,0 +1,36 @@
+{
+    "groups":[
+    {
+                
+                "id": "0",
+                "name": "",
+                "products": [
+            {
+                "id": "1",
+                "name": "Bolo",
+                "image": "bolo.png",
+                "description": "Bolo até 2 Recheios, 1 Massa, a escolher",
+                "price": 49.9 
+                
+            },
+            {
+                "id": "2",
+                "name": "Bombom",
+                "image": "bombom.png",
+                "description":"Chocolate branco, ou preto, escolher o recheio", 
+                "price":1.9 
+            },
+
+            {
+                "id": "3",
+                "name": "Bentô",
+                "image": "bento.png",
+                "description": "Bentô cake, 1 recheio, 1 massa, a escolher", 
+                "price":34.9 
+            }
+           ]
+        }            
+    ]
+}
+                
+        
