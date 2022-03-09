@@ -28,52 +28,48 @@ nav a {
 	text-decoration: none;
 }
 
-nav a:hover {
-	color: #C78C19;
-	text-decoration: underline;
-}
-
-.card img {
-	width: 100%;
-	height: auto;
-	display: block;
-  }
-.produtos {
-	border-radius: 5px;
+.card {
+    border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-}
-
-.produtos li {
-	display: inline-block;
-	text-align: center;
-	width: 30%;
-	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 30px 20px;
-	box-sizing: border-box;
-	border: 2px solid #000000;
-	border-radius: 10px;
-}
-
-.produtos li:hover {
-	border-color: #C78C19;
-}
-
-.produtos li:active {
-	border-color: #088C19;	
-}
-
-.produtos li:hover h2 {
-	font-size: 34px;
-}
-
-.produtos h2, .h2 {
-	font-size: 30px;
-	font-weight: bold;
-}
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .card-content {
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-content .btn {
+    margin-top: auto;
+  }
+  .products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+  @media (min-width: 576px) {
+    .products-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media (min-width: 992px) {
+    .products-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  
 
 .price {
 	color: #37C957;
@@ -208,7 +204,7 @@ td, th {
 #btn-cart {
 	width: 60px;
 	height:60px;
-	background: whitesmoke;
+	background: pink;
 	font-size: 30px;  
 	position: relative;
 	cursor:pointer;
@@ -225,7 +221,7 @@ td, th {
 	display:flex;
 	justify-content: center;
 	align-items:center;
-	background: #faf5f5;
+	background: pink;
 }
 	
 	
@@ -285,43 +281,108 @@ padding-left: 5%;
   /* cart side bar */
 
   .cart-sidebar {
-    position: fixed;
-    background-color: #FFF;
-    top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    display: none;
-    flex-direction: column;
-    padding: 15px;
+	position: fixed;
+	background-color: #FFF;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	flex-direction: column;
+	padding: 15px;
   }
   .cart-sidebar-open {
-    display: flex;
+	display: flex;
   }
   #btn-close-cart {
-    font-size: 30px;
-	color: red;
-    background: transparent;
-    align-self: flex-end;
+	font-size: 30px;
+	color:pink;
+	background: transparent;
+	align-self: flex-end;
   }
   #empty-cart {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	flex-grow: 1;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  #empty-cart.empty-cart-show {
+	display: flex;
   }
   #empty-cart .fa-bag-shopping {
-
-    font-size: 154px;
-    opacity: 0.2;
-    margin-bottom: 25px;
+	color: pink;
+	font-size: 154px;
+	opacity: 0.2;
+	margin-bottom: 25px;
+  }
+  #cart-with-products {
+	overflow: auto;
+	display: none;
+  }
+  #cart-with-products.cart-with-products-show {
+	display: block;
+  }
+  #cart-with-products ul {
+	list-style: none;
+  }
+  #cart-with-products li {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	border-bottom: 1px solid #EAEAEA;
+	padding: 12px 0;
+  }
+  #cart-with-products li img {
+	border-radius: 5px;
+	object-fit: cover;
+  }
+  #cart-with-products li .form-input {
+	width: 68px;
+	text-align: center;
+	align-self: center;
+  }
+  #cart-with-products li button {
+	color: pink;
+	font-size: 18px;
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	align-self: center;
+	cursor: pointer;
+  }
+  #cart-with-products li div {
+	flex-grow: 1;
+  }
+  .cart-total {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 0;
+  }
+  .cart-total p:last-child {
+	font-size: 18px;
+  }
+  .cart-total .h2 {
+	margin: 0;
+  }
+  #cart-with-products .btn-outline {
+	margin-bottom: 12px;
   }
   @media (min-width: 768px) {
-    .cart-sidebar {
-      width: 428px;
-      box-shadow: -3px 0px 6px rgba(0, 0, 0, 0.25);
-    }
+	.cart-sidebar {
+	  width: 428px;
+	  box-shadow: -3px 0px 6px rgba(0, 0, 0, 0.25);
+	}
   }
-
+  
+  /* FORMS */
+  .form-input {
+	border: 1px solid #CED4DA;
+	border-radius: 4px;
+	height: 38px;
+	font-family: inherit;
+	padding: 9px;
+	font-size: 16px;
+  }
 
