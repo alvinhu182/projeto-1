@@ -15,6 +15,9 @@ cartSidebarEl.addEventListener('click', (event) => {
   event.stopPropagation();
 })
 
+//const btnAddMore = document.querySelector('#btn-add-more')
+//btnAddMore.addEventListener('click', closeSidebar)
+
 const fetchProducts = () => {
   const groupsRootEl = document.querySelector('#groups-root')
   fetch('/products.json')

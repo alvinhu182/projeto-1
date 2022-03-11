@@ -144,8 +144,7 @@ td, th {
 	display: block;
     margin: 3% 38% 1%;
     padding: 2% 2%;
-    width: 20%;
-    background-color: lightpink;
+    width: 26%;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -153,6 +152,8 @@ td, th {
     border-radius: 5px;
     cursor: pointer;
 	text-align: center;
+	text-decoration: none;
+	background: pink;
 
 }
 
@@ -193,12 +194,26 @@ td, th {
 	margin: 0 0 1em;
 }
 
+.btn {
+	text-align: center;
+	font-size: 16px;
+	border-radius: 5px;
+	display: block;
+	width: 100%;
+	padding: 9px 0;
+	cursor: pointer;
+	transition: all .3s linear;
+	text-decoration: none;
+	background: pink;
+  }
 .btn-sacola {
 	background: lightpink;
 	font-size: 30px;  
 	position: relative;
 	cursor:pointer;
 	border-radius: 30px;
+	
+	
 }
 
 #btn-cart {
@@ -208,6 +223,8 @@ td, th {
 	font-size: 30px;  
 	position: relative;
 	cursor:pointer;
+
+	
 }
 .btn-cart-badge {
 	position: absolute;
