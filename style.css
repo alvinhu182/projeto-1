@@ -55,18 +55,19 @@ nav a {
   }
   .products-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
     margin-bottom: 15px;
+	margin-top: 15px;
   }
-  @media (min-width: 576px) {
+  @media only screen and (max-width: 768px) {
     .products-grid {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
     }
   }
-  @media (min-width: 992px) {
+  @media only screen and (max-width: 992px) {
     .products-grid {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
     }
   }
   
@@ -205,6 +206,8 @@ td, th {
 	transition: all .3s linear;
 	text-decoration: none;
 	background: pink;
+	box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px; */
+    border: none;
   }
 .btn-sacola {
 	background: lightpink;
@@ -393,8 +396,10 @@ padding-left: 5%;
 	}
   }
   
+
+
   /* FORMS */
-  .form-input {
+.form-input {
 	border: 1px solid #CED4DA;
 	border-radius: 4px;
 	height: 38px;
@@ -402,4 +407,36 @@ padding-left: 5%;
 	padding: 9px;
 	font-size: 16px;
   }
+  .form-input::placeholder,
+  .form-input:-ms-input-placeholder,
+  .form-input::-ms-input-placeholder {
+	color: #999;
+	opacity: 1;
+  }
+  .form-group {
+	margin-bottom: 12px;
+  }
+  .form-group label {
+	color: #000;
+	display: block;
+  }
+  .form-group .form-input {
+	width: 100%;
+  }
+  .form-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 12px;
+  }
+  
+  /* FORM CHECKOUT */
+  .form-checkout {
+	max-width: 424px;
+	margin: 0 auto;
+  }
 
+  .groups-root	{
+	display: flex;
+	justify-content: center;
+  }
+  

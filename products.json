@@ -7,26 +7,26 @@
                 "products": [
             {
                 "id": "1",
-                "name": "Bolo",
+                "name": "Bolo de chocolate",
                 "image": "bolo.png",
-                "description": "Bolo de 1 ou 2 Recheios, 1 Massa, a escolher",
+                "description": "Bolo de chocolate, com bombons e granulado",
                 "price": 49.9 
                 
             },
             {
                 "id": "2",
-                "name": "Bombom",
-                "image": "bombom.png",
-                "description":"Chocolate branco, ou preto, escolher o recheio", 
-                "price":1.9 
+                "name": "Bombom de café",
+                "image": "bombom1.png",
+                "description":"Bombom de chocolate recheado sabor café", 
+                "price":2.9 
             },
 
             {
                 "id": "3",
-                "name": "Bentô",
+                "name": "Bolo panda",
                 "image": "bento.png",
-                "description": "Bentô cake, 1 recheio, 1 massa, a escolher", 
-                "price":34.9 
+                "description": "Bolo de chocolate branco e chocolate preto", 
+                "price":59.9 
             }
            ]
         }            

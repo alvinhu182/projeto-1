@@ -9,6 +9,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="reset.css">
       <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,11 +18,12 @@
         <img src="logo.png" alt="Logo DocinhusDaRay" width="99" height="70" class="logo" />
         <nav>
           <a href="feedback.html">Feedback</a>
+          <li> <button id="btn-cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="btn-cart-badge"></span>
+          </button> 
         </nav>
-        <button id="btn-cart">
-          <i class="fa-solid fa-bag-shopping"></i>
-          <span class="btn-cart-badge"></span>
-        </button>
+       
       </div>
     </header>
     <main class="container">
@@ -99,12 +101,17 @@
             />
           </div>
         </div>
+        <p> Fazer Pedido: <a href="https://api.whatsapp.com/send/?phone=5535988351193&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido" target="_blank">
+            <i class="fa-brands fa-whatsapp-square"></i>
+            (35) 98835-1193
+          </a></p>
         <input
           type="submit"
           value="Calcular frete"
           class="btn btn-main"
         />
       </form>
+
     </main>
     <aside class="cart-sidebar">
       <button id="btn-close-cart">
@@ -112,7 +119,7 @@
       </button>
       <div id="empty-cart">
         <i class="fa-solid fa-bag-shopping"></i>
-        <p class="h2">Sua sacola está vazia.</p>
+       
       </div>
       <div id="cart-with-products">
         <p class="h2">Resumo do pedido:</p>
@@ -123,9 +130,9 @@
           <p>R$ 99,80</p>
         </div>
         <a class="btn btn-outline" href="index.html">Adicionar mais itens</a>
-        <a class="btn btn-main" href="fazer-pedido.html">Fazer pedido</a>
+        <a class="btn btn-main" href="pedido.html">Fazer pedido</a>
       </div>
     </aside>
-    <script src="assets/js/scripts.js"></script>
+    <script src="scripts.js"></script>
   </body>
   </html>
