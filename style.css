@@ -206,7 +206,7 @@ td, th {
 	transition: all .3s linear;
 	text-decoration: none;
 	background: pink;
-	box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px; */
+	box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px; 
     border: none;
   }
 .btn-sacola {

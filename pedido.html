@@ -10,24 +10,29 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="reset.css">
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-      <div class="container">
-        <img src="logo.png" alt="Logo DocinhusDaRay" width="99" height="70" class="logo" />
-        <nav>
-          <a href="feedback.html">Feedback</a>
-          <li> <button id="btn-cart">
-            <i class="fa-solid fa-bag-shopping"></i>
-            <span class="btn-cart-badge"></span>
-          </button> 
-        </nav>
-       
-      </div>
-    </header>
+   
+		<header>
+			<div class="container">
+				<h1><img src="logo.png"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="feedback.html">Feedback</a></li>
+						 <li> <button id="btn-cart">
+							<i class="fa-solid fa-bag-shopping"></i>
+							<span class="btn-cart-badge"></span>
+						  </button> 
+						
+					</ul>
+				</nav>
+			</div>
+		</header>
     <main class="container">
-      <h1>Finalizar pedido</h1>
+      
       <form class="form-checkout">
         <div class="form-group">
           <label for="input-name">Nome</label>
@@ -105,22 +110,22 @@
             <i class="fa-brands fa-whatsapp-square"></i>
             (35) 98835-1193
           </a></p>
-        <input
+        <!-- <input
           type="submit"
           value="Calcular frete"
           class="btn btn-main"
-        />
+        /> -->
       </form>
 
     </main>
-    <aside class="cart-sidebar">
-      <button id="btn-close-cart">
+     <aside class="cart-sidebar">
+       <button id="btn-close-cart">
         <i class="fa-solid fa-xmark"></i>
       </button>
-      <div id="empty-cart">
-        <i class="fa-solid fa-bag-shopping"></i>
+      <div id="empty-cart"> 
+      <i class="fa-solid fa-bag-shopping"></i>
        
-      </div>
+      </div> 
       <div id="cart-with-products">
         <p class="h2">Resumo do pedido:</p>
         <ul>
@@ -129,7 +134,7 @@
           <p class="h2">Total</p>
           <p>R$ 99,80</p>
         </div>
-        <a class="btn btn-outline" href="index.html">Adicionar mais itens</a>
+        <a class="btn btn-outline" href="produtos.html">Adicionar mais itens</a>
         <a class="btn btn-main" href="pedido.html">Fazer pedido</a>
       </div>
     </aside>
