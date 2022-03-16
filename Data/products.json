@@ -8,7 +8,7 @@
             {
                 "id": "1",
                 "name": "Bolo de chocolate",
-                "image": "bolo.png",
+                "image": "assets/Images/bolo.png",
                 "description": "Bolo de chocolate, com bombons e granulado",
                 "price": 49.9 
                 
@@ -16,7 +16,7 @@
             {
                 "id": "2",
                 "name": "Bombom de café",
-                "image": "bombom1.png",
+                "image": "assets/Images/bombom1.png",
                 "description":"Bombom de chocolate recheado sabor café", 
                 "price":2.9 
             },
@@ -24,7 +24,7 @@
             {
                 "id": "3",
                 "name": "Bolo panda",
-                "image": "bento.png",
+                "image": "assets/Images/bento.png",
                 "description": "Bolo de chocolate branco e chocolate preto", 
                 "price":59.9 
             }
