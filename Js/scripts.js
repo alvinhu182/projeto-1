@@ -241,7 +241,7 @@ formCheckoutEl?.addEventListener("submit", (event) => {
   text += formCheckoutEl.elements["input-cep"].value;
   const subdomain = window.innerWidth > 768 ? "web" : "api";
   window.open(
-    `https://${subdomain}.whatsapp.com/send?phone=5535988351193&text=${encodeURI(
+    `https://${subdomain}.whatsapp.com/send?phone=556791283355&text=${encodeURI( 
       text
     )}`,
     "_blank"
